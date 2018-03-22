@@ -17,7 +17,8 @@ public class ThreadRunner implements Runnable {
     }
 
     private String threadOutputString(int messageNum){
-        String message = "Message from thread" + messageNum;
-        return message;
+        String message = (messageNum == 1) ? "1st" : (messageNum == 2) ? "2nd"
+                : (messageNum == 3) ? "3rd" : messageNum + "th";
+        return message + " Message from thread " + _threadId;
     }
 }
