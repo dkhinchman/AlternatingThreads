@@ -11,8 +11,7 @@ public class AlternatingThreads {
     private Monitor monitor;
 
     public static void main(String[] args){
-        int numThreads = 5;
-        /* <-added in for quick testing
+
         if(args.length != 1)
             toRun();
 
@@ -25,7 +24,6 @@ public class AlternatingThreads {
             e.printStackTrace();
             toRun();
         }
-        */
 
         new AlternatingThreads(numThreads);
 
